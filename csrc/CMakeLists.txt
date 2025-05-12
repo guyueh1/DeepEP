@@ -9,7 +9,7 @@ set(CUDA_SEPARABLE_COMPILATION ON)
 list(APPEND CUDA_NVCC_FLAGS "-O3")
 list(APPEND CUDA_NVCC_FLAGS "--ptxas-options=--verbose,--register-usage-level=10,--warn-on-local-memory-usage")
 
-set(TORCH_CUDA_ARCH_LIST "9.0")
+set(TORCH_CUDA_ARCH_LIST "9.0 10.0")
 find_package(CUDAToolkit REQUIRED)
 find_package(pybind11 REQUIRED)
 find_package(Torch REQUIRED)
